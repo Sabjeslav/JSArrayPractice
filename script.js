@@ -112,7 +112,7 @@ hasNumber(arr11, 3);
 
 /* Task 15: Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true, а если нет - вернуть false. */
 function hasTwoNumbers(array) {
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length - 1; i++) {
     if (array[i] === array[i+1]) return true;
   }
   return false;
